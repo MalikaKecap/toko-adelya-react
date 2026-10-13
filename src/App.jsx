@@ -9,9 +9,6 @@ export default function App() {
     document.body.className = bodyClass;
     hostRef.current.innerHTML = markup;
 
-    const configuredUrl = import.meta.env.VITE_GOOGLE_SCRIPT_URL?.trim();
-    if (configuredUrl) localStorage.setItem('adelia_script_url', configuredUrl);
-
     const script = document.createElement('script');
     script.dataset.posRuntime = 'true';
     script.textContent = legacyScript;
