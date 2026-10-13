@@ -1,0 +1,9 @@
+body { font-family: 'Plus Jakarta Sans', sans-serif; }
+#root { display: contents; }
+@media (max-width: 767px) {
+  #sidebar { width: 5rem; }
+  #sidebar .nav-text, #sidebar .sidebar-label, #brand-text { display: none; }
+  main > header { padding-left: 1rem; padding-right: 1rem; }
+  main > div { padding: 1rem; }
+  #current-datetime { display: none; }
+}
